@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); 
+*{
+    font-family: 'Abril Fatface', cursive;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color: red;
+    --text-color: black;
+    --bg-color: white;
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+}
+#mylogo {
+	float: left;
+	margin-right: 15px;
+	width: 114px;
+}
+#Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: o 5px 15 rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+#cart_logo{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+#User{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+#Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+#Navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#Navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+
+}
+#Navbar li a:hover,
+#Navbar li a.current{
+    color: blueviolet;
+}
+#Navbar li a.current::after
+#Navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: blueviolet;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#page{
+    background-color: rgb(253, 215, 169);
+    background-image: url("misale/BackgoundBAck.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: 90 ;
+    background-repeat: no-repeat;
+    background-position: top 15% right 5%  ;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#page h4{
+    padding-bottom: 15px;
+}
+
+#page h1{
+    padding-bottom: 15px;
+
+}
+#page p{
+    padding-bottom: 15px;
+}
+#page button{
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#page button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#page button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#page button:hover span {
+    padding-right: 25px;
+}
+#page button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.section-pair1{
+    padding: 40px 80px;
+}
+.section-merge1{
+    margin: 40px 0;
+}
+#Features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#Features .Boxes{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+#Features .Boxes:hover{
+    box-shadow: 10px 10px 54px rgba(103, 25, 199, 0.141);
+
+}
+#Features .Boxes img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#Features .Boxes h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: rgb(251, 206, 6);
+}
+#Product{
+    text-align: center;
+
+}
+#Product .Sm-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    overflow: auto;
+    
+}
+#Product .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0 ;
+    transition: 0.2s ease;
+    position: relative;
+}
+#Product .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+#Product .pro img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+#Product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#Product .pro .des span{
+    color: lightgray;
+    font-size: 12px;
+}
+#Product .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#Product .pro .des i{
+    font-size: 12px;
+    color: gold;
+
+}
+#Product .pro .des h4{
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+#Product .pro .shap{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#Thankyou{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("misale/Fashion-Background-by-nirmala.graphics-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    background-color: rgb(252, 208, 246);
+}
+#Thankyou h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+#Thankyou p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(52, 35, 35);
+}
+#Thankyou p span{
+    color: gold;
+}
+footer{
+    
+    background-color: rgb(13, 6, 6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer h4{
+    color: white;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    color: white;
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .TagFollow{
+    margin-top: 20px;
+}
+footer .TagFollow i{
+    color: white;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .TagFollow i:hover{
+    color: rgb(202, 10, 167);
+}
+footer .Copyright{
+    width: 100%;
+    text-align: center;
+}
+#Product1{
+    text-align: center;
+
+}
+#Product1 .Sm-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    
+}
+#Product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0 ;
+    transition: 0.2s ease;
+    position: relative;
+}
+#Product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+#Product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+#Product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#Product1 .pro .des span{
+    color: lightgray;
+    font-size: 12px;
+}
+#Product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#Product1 .pro .des i{
+    font-size: 12px;
+    color: gold;
+
+}
+#Product1 .pro .des h4{
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+#Product1 .pro .shap{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#Topshop{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("misale/fowl.jpeg");
+    background-size: cover ;
+    background-position: 20% 50%;
+    background-color: rgb(199, 251, 144);
+}
+#Topshop h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+#Topshop p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+#Topshop p span{
+    color: gold;
+}
